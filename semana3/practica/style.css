@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    min-height: 10vh;
+    display: flex;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;    
+    width: 15%;
+    & img{
+        width: 100%;
+    }
+    
+}
+
+
+nav{
+    width: 85%;
+    justify-content: end;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+
+    & a {
+        font-size: 40px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-decoration: none;
+        color: black;
+        
+        &:hover{
+            color: red
+        }
+    }
+
+}
