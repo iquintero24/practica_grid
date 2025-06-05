@@ -1,43 +1,157 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
 }
 
-header{
-    min-height: 10vh;
-    display: flex;
+body {
+  background-color: black;
 }
 
-#logo{
+header {
+  background-color: white;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+
+  & section{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;    
-    width: 15%;
+    padding: 1rem;
+  }
+
+  & nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    & a{
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+
+
+.hero{
+  background-image: url(./img/plano-de-fundo-de-tinta-acrilica.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  min-height: 20rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  gap: 1rem;
+
+
+  & h1,a{
+    color: white;
+  }
+
+  & a{
+
+    padding: .7rem;
+    text-decoration: none;
+    text-align: center;
+    border: 3px solid white;
+
+    &:hover{
+      color: black;
+      background-color: white;
+    } 
+
+  }
+
+
+
+}
+
+.about_me{
+  min-height: 30rem;
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .about_me_card{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
     & img{
-        width: 100%;
+      object-fit: cover;
+      background-size: contain;
+      width: 23rem;
+      padding: 1rem;
     }
     
-}
-
-
-nav{
-    width: 85%;
-    justify-content: end;
-    gap: 10px;
-    display: flex;
-    align-items: center;
-
-    & a {
-        font-size: 40px;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-decoration: none;
-        color: black;
-        
-        &:hover{
-            color: red
-        }
+    & p:hover{
+      color: red;
     }
 
+  }
+
 }
+
+
+.gallery{
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: repeat(8,1fr);
+  width: 100%;
+  min-height: 30rem;
+  padding: 1rem;
+  gap: 1rem;
+
+
+  & img{
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+
+/* Small (sm) - ≥576px /
+@media (min-width: 576px) {
+  / estilos para pantallas sm y mayores /
+}
+
+/ Medium (md) - ≥768px /
+@media (min-width: 768px) {
+  / estilos para pantallas md y mayores /
+}
+
+/ Large (lg) - ≥992px /
+@media (min-width: 992px) {
+  / estilos para pantallas lg y mayores /
+}
+
+/ Extra Large (xl) - ≥1200px /
+@media (min-width: 1200px) {
+  / estilos para pantallas xl y mayores /
+}
+
+/ Extra Extra Large (xxl) - ≥1400px /
+@media (min-width: 1400px) {
+  / estilos para pantallas xxl y mayores /
+}
+*/
