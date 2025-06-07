@@ -2,27 +2,22 @@
 <html lang="en">
 
 <head>
-    <!-- Configuración básica del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="website of an archive and an art and clothing gallery">
 
-    <!-- Enlace al archivo de estilos -->
     <link rel="stylesheet" href="./style.css">
 
-    <!-- Título del documento que aparece en la pestaña del navegador -->
-    <title>Document</title>
+    <title>Gallery Archive</title>
 </head>
 
 <body>
 
-    <!-- Encabezado del sitio: contiene el nombre de la galería y la barra de navegación -->
     <header>
         <section>
             <p>gallery archive</p>
         </section>
 
-        <!-- Navegación principal del sitio -->
         <nav>
             <a href="#about_as">About us</a>
             <a href="#gallery">Gallery</a>
@@ -32,41 +27,44 @@
     </header>
 
     <main>
-        <!-- Sección principal o "hero" con mensaje destacado -->
         <section class="hero" id="hero">
             <h1>The gallery is unique</h1>
-            <a href>know more</a> <!-- Este enlace debería tener un href válido -->
+            <a href="#about_as">know more</a>
         </section>
 
-        <!-- Sección 'About Us': información sobre la galería -->
         <section class="about_me" id="about_as">
-            <!-- Primera tarjeta de información -->
             <div class="about_me_card">
                 <img src="./img/image_text_1.webp" alt="image about us one">
                 <div class="about_me_text">
                     <h2>Welcome to the Contemporary Art Gallery</h2>
-                    <p>Explore contemporary art at our gallery...</p>
+                    <p>Explore contemporary art at our gallery. Our renowned
+                        collection features works from both established
+                        and emerging artists, including paintings, sculptures,
+                        and multimedia installations. Enjoy guided
+                        tours, artist talks, and workshops that enhance your
+                        appreciation of modern art. Visit us today andMore actions
+                        immerse yourself in creativity!</p>
                 </div>
             </div>
 
-            <!-- Segunda tarjeta de información -->
             <div class="about_me_card">
                 <img src="./img/image_text_2.webp" alt="image about us two">
                 <div class="about_me_text">
                     <h2>Our Vision and Mission: Transforming Contemporary Art</h2>
-                    <p>Our vision is to be a leading force...</p>
+                    <p>Our vision is to be a leading force in the contemporary art scene, promoting innovation and
+                        creativity. We strive to break down barriers between artists and audiences, making art
+                        accessible toMore actions
+                        everyone. Our mission is to inspire, educate, and provoke thought through the power of art,
+                        encouraging visitors to reflect on their own experiences and perspectives.!</p>
                 </div>
             </div>
         </section>
 
-        <!-- Galería de imágenes con descripciones -->
         <section class="gallery" id="gallery">
-            <!-- Contenedor de cada imagen -->
             <div class="img-container">
                 <img src="./img/imagen1.webp" alt="imagen 1">
                 <span class="img-text">Descripción 1</span>
             </div>
-            <!-- Repetido para más imágenes -->
             <div class="img-container">
                 <img src="./img/imagen2.webp" alt="imagen 2">
                 <span class="img-text">Descripción 2</span>
@@ -97,44 +95,55 @@
             </div>
         </section>
 
-        <!-- Sección de subasta con descripción e imagen -->
         <section class="auction" id="auction">
             <div class="auction_text">
                 <h2>Charity Auction: Raf Simons 2001 Bomber Jacket</h2>
-                <p>Join us for a unique opportunity...</p>
+                <p> Join us for a unique opportunity to own a piece of fashion history while supporting a great cause!
+                    We are thrilled to present a rare Raf Simons bomber jacket from the 2001 collection, showcasing the
+                    designer's innovative approach to contemporary fashion.
+
+                    Proceeds from the auction will benefit ChildrenGold, an organization dedicated to providing
+                    educational resources and support to underprivileged children. Their mission is to empower youth
+                    through access to quality education, mentorship programs, and creative arts initiatives, helping
+                    them build a brighter future.
+
+                    By participating, you not only acquire a remarkable item but also contribute to a meaningful
+                    causeMore actions
+                    that impacts many lives.
+
+                    Don't miss your chance to bid on this exclusive Raf Simons bomber jacket and be part of a movement
+                    that champions creativity and compassion. Join us in this exciting event and help spread hope and
+                    support!</p>
             </div>
             <img src="./img/raf-simons.webp" alt="raf Simons image">
 
-            <a href="">to auction</a> <!-- Este enlace también debería tener un destino válido -->
+            <a href="#contact">to auction</a>
         </section>
 
-        <!-- Sección de contacto con mapa y enlaces a redes sociales -->
         <section class="contact" id="contact">
             <h2>Contact</h2>
 
-            <!-- Mapa incrustado de Google Maps -->
-            <iframe
-                src="https://www.google.com/maps/embed?pb=..."
-                height="200" width="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" title="Maps">
+            <iframe src="https://www.google.com/maps/embed?pb=..." height="200" width="100%" style="border:0;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Maps">
             </iframe>
 
-            <!-- Lista de redes sociales -->
             <ul class="contact__redes">
                 <li class="contact__redes__img">
-                    <a href=""><img src="./img/facebook.svg" alt="Facebook logo"></a>
+                    <a href="https://www.facebook.com" target="_blank"><img src="./img/facebook.svg"
+                            alt="Facebook logo"></a>
                 </li>
                 <li class="contact__redes__img">
-                    <a href=""><img src="./img/instagram.svg" alt="Instagram logo"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="./img/instagram.svg"
+                            alt="Instagram logo"></a>
                 </li>
                 <li class="contact__redes__img">
-                    <a href=""><img src="./img/pinterest.svg" alt="Pinterest logo"></a>
+                    <a href="https://www.pinterest.com" target="_blank"><img src="./img/pinterest.svg"
+                            alt="Pinterest logo"></a>
                 </li>
             </ul>
         </section>
     </main>
 
-    <!-- Pie de página del sitio con enlaces rápidos -->
     <footer class="gallery-footer">
         <div class="enlaces-rapidos">
             <h2>Gallery archive</h2>
@@ -146,7 +155,6 @@
                 <li><a href="#contact">contact</a></li>
             </ul>
         </div>
-        <!-- Imagen de logo u otro símbolo gráfico -->
         <img src="./img/trex.webp" alt="Trex logo">
     </footer>
 </body>
