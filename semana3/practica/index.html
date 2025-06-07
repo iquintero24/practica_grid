@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="website of an archive and an art and clothing gallery">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
@@ -16,21 +17,22 @@
         </section>
 
         <nav>
-            <a href>About us</a>
-            <a href>home</a>
-            <a href>exclusive pieces</a>
+            <a href="#about_as">About us</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#auction">Auction pieces</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <h1>The gallery is unique</h1>
             <a href>know more</a>
         </section>
 
-        <section class="about_me">
+        <section class="about_me" id="about_as">
             <div class="about_me_card">
-                <img src="./img/image_text_1.webp" alt>
+                <img src="./img/image_text_1.webp" alt="image about us one">
                 <div class="about_me_text">
                     <h2>Welcome to the Contemporary Art Gallery</h2>
                     <p>Explore contemporary art at our gallery. Our renowned
@@ -44,7 +46,7 @@
             </div>
 
             <div class="about_me_card">
-                <img src="./img/image_text_2.webp" alt>
+                <img src="./img/image_text_2.webp" alt="image about us two">
 
                 <div class="about_me_text">
 
@@ -60,42 +62,42 @@
 
         </section>
 
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="img-container">
-                <img src="./img/imagen1.webp" alt>
+                <img src="./img/imagen1.webp" alt="imagen 1">
                 <span class="img-text">Descripción 1</span>
             </div>
             <div class="img-container">
-                <img src="./img/imagen2.webp" alt>
+                <img src="./img/imagen2.webp" alt="imagen 2">
                 <span class="img-text">Descripción 2</span>
             </div>
             <div class="img-container">
-                <img src="./img/imagen3.webp" alt>
+                <img src="./img/imagen3.webp" alt="imagen 3">
                 <span class="img-text">Descripción 3</span>
             </div>
             <div class="img-container">
-                <img src="./img/imagen4.webp" alt>
+                <img src="./img/imagen4.webp" alt="imagen 4">
                 <span class="img-text">Descripción 4</span>
             </div>
             <div class="img-container">
-                <img src="./img/imagen5.webp" alt>
+                <img src="./img/imagen5.webp" alt="imagen 5">
                 <span class="img-text">Descripción 5</span>
             </div>
             <div class="img-container">
-                <img src="./img/imagen6.webp" alt>
+                <img src="./img/imagen6.webp" alt="imagen 6">
                 <span class="img-text">Descripción 6</span>
             </div>
             <div class="img-container">
-                <img src="./img/imagen7.webp" alt>
+                <img src="./img/imagen7.webp" alt="imagen 7">
                 <span class="img-text">Descripción 7</span>
             </div>
             <div class="img-container">
-                <img src="./img/imagen8.webp" alt>
+                <img src="./img/imagen8.webp" alt="imagen 8">
                 <span class="img-text">Descripción 8</span>
             </div>
         </section>
 
-        <section class="auction">
+        <section class="auction" id="auction">
             <div class="auction_text">
                 <h2>Charity Auction: Raf Simons 2001 Bomber Jacket</h2>
                 <p> Join us for a unique opportunity to own a piece of fashion history while supporting a great cause!
@@ -114,14 +116,49 @@
                     that champions creativity and compassion. Join us in this exciting event and help spread hope and
                     support!</p>
             </div>
-            <img src="./img/raf-simons.webp" alt="">
+            <img src="./img/raf-simons.webp" alt="raf Simons image">
+
+            <a href="">to auction</a>
+
+        </section>
+
+
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.1848519596724!2d28.996005076593132!3d41.04308651727986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7b6371987c7%3A0xe953913a9102f98b!2sArt%20Parisa%20Gallery!5e0!3m2!1ses!2sco!4v1749241344361!5m2!1ses!2sco"
+                height="200" width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" title="Maps"></iframe>
+
+            <ul class="contact__redes">
+                <li class="contact__redes__img">
+                    <a href=""><img src="./img/facebook.svg" alt="Facebook logo"></a>
+                </li>
+                <li class="contact__redes__img">
+                    <a href=""><img src="./img/instagram.svg" alt="Instagram logo"></a>
+                </li>
+                <li class="contact__redes__img">
+                    <a href=""><img src="./img/pinterest.svg" alt="Pinterest logo"></a>
+                </li>
+            </ul>
         </section>
 
     </main>
 
 
     <footer class="gallery-footer">
-        <p>&copy; 2025 Art Archive Gallery. All rights reserved.</p>
+        <div class="enlaces-rapidos">
+            <h2>Gallery archive</h2>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about_as">About us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#auction">Auction pieces</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+        <img src="./img/trex.webp" alt="Trex logo">
+
     </footer>
 </body>
 
