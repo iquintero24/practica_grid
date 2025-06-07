@@ -1,24 +1,30 @@
+/* ===========================
+   RESETEO Y ESTILOS GLOBALES
+=========================== */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: monospace;
+  font-family: monospace; /* Tipografía uniforme estilo consola */
 }
 
-
-
-html{
-  scroll-behavior: smooth;
-}
-
-h1{
-  font-size: 4rem;
+html {
+  scroll-behavior: smooth; /* Desplazamiento suave al hacer clic en los enlaces */
 }
 
 body {
-  background-color: black;
+  background-color: black; /* Fondo negro principal */
   height: auto;
 }
+
+h1 {
+  font-size: 4rem; /* Tamaño grande para títulos */
+}
+
+/* ===========================
+   ENCABEZADO / HEADER
+=========================== */
 
 header {
   background-color: white;
@@ -31,6 +37,7 @@ header {
   padding: 1rem;
   font-size: 15px;
 
+  /* Sección dentro del header */
   & section {
     width: 100%;
     display: flex;
@@ -39,6 +46,7 @@ header {
     padding: 1rem;
   }
 
+  /* Navegación dentro del header */
   & nav {
     width: 100%;
     display: flex;
@@ -53,7 +61,9 @@ header {
   }
 }
 
-
+/* ===========================
+   SECCIÓN HERO / PORTADA
+=========================== */
 
 .hero {
   background-image: url(./img/plano-de-fundo-de-tinta-acrilica.webp);
@@ -68,10 +78,7 @@ header {
   object-fit: cover;
   gap: 1rem;
 
-
-
   & a {
-
     padding: .7rem;
     text-decoration: none;
     text-align: center;
@@ -83,13 +90,12 @@ header {
       color: black;
       background-color: white;
     }
-
   }
-
-
-
 }
 
+/* ===========================
+   SECCIÓN SOBRE MÍ
+=========================== */
 
 .about_me {
   min-height: 100vh;
@@ -116,7 +122,7 @@ header {
       padding: 1rem;
     }
 
-    & .about_me_text{
+    & .about_me_text {
       display: flex;
       flex-direction: column;
       gap: 2rem;
@@ -128,13 +134,13 @@ header {
       &:hover {
         color: red;
       }
-
     }
-
   }
-
 }
 
+/* ===========================
+   GALERÍA DE IMÁGENES
+=========================== */
 
 .gallery {
   display: grid;
@@ -176,6 +182,9 @@ header {
   }
 }
 
+/* ===========================
+   SECCIÓN SUBASTA / AUCTION
+=========================== */
 
 .auction {
   min-height: auto;
@@ -196,7 +205,6 @@ header {
     & p {
       text-align: justify;
     }
-
   }
 
   & img {
@@ -208,7 +216,6 @@ header {
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-
   }
 
   & a {
@@ -220,15 +227,16 @@ header {
     color: black;
     border: 3px solid black;
 
-    &:hover{
+    &:hover {
       color: white;
       background-color: black;
     }
-
   }
-
 }
 
+/* ===========================
+   SECCIÓN CONTACTO
+=========================== */
 
 .contact {
   background-color: white;
@@ -252,9 +260,11 @@ header {
   & img {
     width: 2rem;
   }
-
 }
 
+/* ===========================
+   PIE DE PÁGINA / FOOTER
+=========================== */
 
 .gallery-footer {
   color: black;
@@ -269,22 +279,19 @@ header {
   padding: 1rem;
   gap: 2rem;
 
-
-
-  & .enlaces-rapidos{
+  & .enlaces-rapidos {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     text-align: center;
     width: 100%;
-    
   }
 
-  & h1{
+  & h1 {
     text-align: center;
   }
 
-  & .enlaces-rapidos ul{
+  & .enlaces-rapidos ul {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -293,12 +300,11 @@ header {
     list-style: none;
   }
 
-
-  & .enlaces-rapidos a{
+  & .enlaces-rapidos a {
     color: black;
     text-decoration: none;
 
-    &:hover{
+    &:hover {
       color: red;
     }
   }
@@ -306,27 +312,30 @@ header {
   & img {
     width: 5rem;
   }
-
 }
 
-
+/* ===========================
+   ANIMACIÓN
+=========================== */
 
 @keyframes float {
   50% {
     transform: translateY(-10px);
   }
-
   100% {
     transform: translateY(0px);
   }
 }
 
-@media (min-width:767px) {
+/* ===========================
+   MEDIA QUERIES
+=========================== */
 
-  header a{
+/* Para pantallas mayores a 767px */
+@media (min-width: 767px) {
+  header a {
     font-size: 20px;
   }
-
 
   .about_me .about_me_card p {
     font-size: 2rem;
@@ -340,17 +349,13 @@ header {
     font-size: 3rem;
   }
 
-
-  .gallery-footer{
+  .gallery-footer {
     font-size: 20px;
   }
-
 }
 
-
+/* Para pantallas mayores a 992px */
 @media (min-width: 992px) {
-
-
   header {
     flex-direction: row;
     font-size: 20px;
@@ -358,15 +363,10 @@ header {
     & section {
       justify-content: left;
     }
-
   }
 
-  .hero {
-  
-
-    & a {
-      font-size: 2rem;
-    }
+  .hero a {
+    font-size: 2rem;
   }
 
   .about_me {
@@ -401,7 +401,6 @@ header {
     grid-template-columns: repeat(3, 1fr);
   }
 
-
   .img-container:nth-of-type(1) {
     grid-row: 1/3;
   }
@@ -431,45 +430,13 @@ header {
     & p {
       font-size: 18px;
     }
-
   }
 
-  .contact {
-
-    & iframe {
-      height: 30rem;
-    }
-
-    & img {
-      width: 4rem;
-    }
+  .contact iframe {
+    height: 30rem;
   }
 
-
+  .contact img {
+    width: 4rem;
+  }
 }
-
-/* Small (sm) - ≥576px /
-@media (min-width: 576px) {
-  / estilos para pantallas sm y mayores /
-}
-
-/ Medium (md) - ≥768px /
-@media (min-width: 768px) {
-  / estilos para pantallas md y mayores /
-}
-
-/ Large (lg) - ≥992px /
-@media (min-width: 992px) {
-  / estilos para pantallas lg y mayores /
-}
-
-/ Extra Large (xl) - ≥1200px /
-@media (min-width: 1200px) {
-  / estilos para pantallas xl y mayores /
-}
-
-/ Extra Extra Large (xxl) - ≥1400px /
-@media (min-width: 1400px) {
-  / estilos para pantallas xxl y mayores /
-}
-*/
