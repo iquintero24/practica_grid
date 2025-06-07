@@ -10,7 +10,7 @@ The main goal is to apply modern web design techniques with a clean, responsive 
 ## 🌐 Live Demo
 
 🔗 **Check out the live site on Netlify:**  
-👉 [https://6843b69d0655af11d702c2d3--archivegallery.netlify.app/](https://6843b69d0655af11d702c2d3--archivegallery.netlify.app/)
+👉 [https://6843b69d0655af11d702c2d3--archivegallery.netlify.app/](https://6843c04c15f30200081b9e2c--archivegallery.netlify.app/)
 
 ---
 
